@@ -74,14 +74,14 @@ public class Page3 extends AppCompatActivity {
             rating = "";
         }
 
-        TextView summaryText = findViewById(R.id.textView7);
+        TextView summaryText = findViewById(R.id.SummaryText);
         String info = "Country:\n" + nationality + "\n\n" + "Age Range:\n" + age + "\n\n"
                 + "Most Recent Travel Purposes:\n" + business + relaxation
                 + medicalReason + family + other + "\n\n"
                 + "Most Recent Travel Rating:\n" + rating + " Stars";
         summaryText.setText(info);
 
-        Button to_fourth = findViewById(R.id.button4);
+        Button to_fourth = findViewById(R.id.next_button_3);
         to_fourth.setOnClickListener(view -> {
             Intent intentToFourth = new Intent(this, Page4.class);
             startActivity(intentToFourth);
