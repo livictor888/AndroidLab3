@@ -22,8 +22,7 @@ public class MainActivity extends AppCompatActivity {
         EditText courseCodeText = findViewById(R.id.courseCodeInputBox);
         String value = courseCodeText.getText().toString();
 
-//        if (value.equals("COMP3717")) {
-        if (value.equals("q")) {
+        if (value.equals("COMP3717")) {
             Intent page1Intent = new Intent(this, Page1.class);
             startActivity(page1Intent);
         } else {
